@@ -10,18 +10,19 @@
         margin: 0px;
         padding: 0px;
       }
-      body{
+      .header {
         margin: 3px;
-        height: 100hv;
-      }
-
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
       .top {
         display: flex;
         gap: 3px;
         padding: 3px;
       }
-      .logo {
+      .lowgo {
         background-color: red;
         height: 40px;
         width: 40px;
@@ -33,66 +34,64 @@
         display: flex;
         gap: 3px;
         padding: 3px;
-        align-items: center;
       }
-      .bux {
-        background-color: blue;
+      .topbox {
+        background-color: red;
         height: 30px;
         width: 60px;
       }
-      .container{
+      .maincontent {
         display: flex;
         border: 1px solid black;
-        padding: 3px;
-        gap: 3px;
-        height: 76vh;
+        height: 80vh;
+        flex-wrap: wrap;
+        margin: 3px;
       }
-      .main-content{
-        display: flex;
+      .content{
+        margin: 3px;
         border: 1px solid black;
-        padding: 3px;
-        flex-direction: row;
+        display: flex;
+        gap: 3px;
         flex-grow: 1;
+        width: 40px;
         justify-content: center;
+        align-items: center;
         justify-content: space-around;
       }
-      .leftbox{
-        margin-top: 10px;
+      .leftbox {
+        padding: 3px;
         display: flex;
-       
         border: 1px solid black;
         padding: 3px;
-        align-items: center;
-        width: 29vw;
-        height: 32vh;
+        width: 336px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 3px;
+        
       }
-      .bo1{
+      .leftboxes {
         border: 1px solid black;
+        height: 80px;
+        width: 80px;
+        
       }
-      .boox{
-        border: 1px solid black;
-        height: 200px;
-        width: 200px;
-      }
-      .rightbox{
-        margin-top: 10px;
+      .rightbox {
         display: flex;
-       
         border: 1px solid black;
         padding: 3px;
-        align-items: center;
-        width: 29vw;
-        height: 32vh;
+        width: 336px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 3px;
       }
-      .bo1{
+      .rightboxes {
         border: 1px solid black;
+        height: 80px;
+        width: 80px;
       }
-      .boox{
-        border: 1px solid black;
-        height: 200px;
-        width: 28vw;
-      }
+
       .aside {
+        margin: 3px;
         display: flex;
         border: 1px solid black;
         padding: 3px;
@@ -101,7 +100,6 @@
         border: 1px solid black;
         height: 30px;
         width: 268px;
-        margin: 3px;
       }
       .footer{
         display: flex;
@@ -109,68 +107,83 @@
         gap: 3px;
         padding: 3px;
         flex-grow: 1;
-        flex-direction: column;
-        margin-top: 3px;
+        justify-content: space-between;
       }
-      .upfoot{
+      .leftfoot{
         display: flex;
       }
-      .lowgo{
+      .logo{
         background-color: red;
         height: 40px;
         width: 40px;
       }
       .teext{
         display: flex;
-        align-items: center;
+        flex-direction: column;
       }
-      .downfoot{
+      .rightfowter{
+        display: flex;
+      }
+      .rightfoot{
         display: flex;
         gap: 3px;
-        justify-content: center;
-        
+        align-items: center;
       }
       .footbox{
         background-color: red;
         height: 20px;
         width: 20px;
       }
-      .copy{
-        display: flex;
-        justify-content: center;
-      }
     </style>
   </head>
   <body>
-    <div class="header">
-      <div class="top">
-        <div class="logo"></div>
+    <div class="container">
+      <div class="header">
+        <div class="top">
+          <div class="lowgo"></div>
+          <div class="text">FLEXBOX</div>
+        </div>
 
-        </div>  
         <div class="bottom">
-          <div class="bux"></div>
-          <div class="bux"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
+          <div class="topbox"></div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="main-content">
+      <div class="maincontent">
+        <div class="content">
         <div class="leftbox">
-            <div class="box1">
-            <div class="mainbox">Main Box1</div>
-            </div>
-            <div class="boox"></div>
-          </div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+          <div class="leftboxes"></div>
+        </div>
 
-          <div class="rightbox">
-            <div class="box1">
-            <div class="mainbox">Main Box1</div>
-            </div>
-            <div class="boox"></div>
-            </div>
-          </div>
-        
-
+        <div class="rightbox">
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+          <div class="rightboxes"></div>
+        </div>
+      </div>
         <div class="aside">
           <div class="sidebox">
             <div class="sideboxes"></div>
@@ -184,25 +197,25 @@
             <div class="sideboxes"></div>
             <div class="sideboxes"></div>
           </div>
-        </div>
       </div>
-    </div>
+      </div>
 
       <div class="footer">
-        <div class="upfoot">
-          <div class="lowgo"></div>
-          <div class="teext"> FLEXBOX </div>
+        <div class="leftfoot">
+          <div class="logo"></div>
+        <div class="teext">
+          <div class="text">FLEXBOX</div>
+          <div class="text">@Copyright All right reserved</div>
         </div>
-<hr>
-        <div class="downfoot">
+      </div>
+
+      <div class="rightfowter">
+        <div class="rightfoot">
           <div class="footbox"></div>
           <div class="footbox"></div>
           <div class="footbox"></div>
           <div class="footbox"></div>
           <div class="footbox"></div>
-        </div>
-        <div class="copy">
-          <div class="right">@Cpyright All right reserved</div>
         </div>
       </div>
     </div>
